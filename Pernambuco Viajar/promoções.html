@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meu Site - Versão 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Pernambuco</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destino.html">Destino</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="promoções.html">Promoções</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contatos.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <div class="jumbotron jumbotron-fluid" id="home">
+        <div class="container">
+            <h1 class="display-4">Trilha - PE</h1>
+            <p class="lead">Salve, ó terra dos altos coqueiros
+                De belezas soberbo estendal
+                Nova Roma de bravos guerreiros
+                Pernambuco imortal, imortal!</p>
+            <a href="historia.html" class="btn btn-primary btn-lg">Saiba mais</a>
+        </div>
+    </div>
+
+    <div class="container" id="promocoes">
+        <h2>Promoções</h2>
+        <p>Confira nossas promoções imperdíveis!</p>
+        <p>Aqui você conhecerá os pacotes e seus benefícios individuais e acompanhantes</p>
+        <div id="promoCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-bs-target="#promoCarousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#promoCarousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#promoCarousel" data-bs-slide-to="2"></li>
+            </ol>
+    
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/praia.jpg" alt="Pacote Praia" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h2>Praias</h2>
+                        <p>Aproveite o sol e as belas praias de Pernambuco.</p>
+                        <p>R$ 2.500,00</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/cachoeira.jpg" alt="Pacote Cachoeira" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h2>Pacote Aventura na Cachoeira</h2>
+                        <p>Desfrute de aventuras e trilhas em meio à natureza das cachoeiras.</p>
+                        <p>R$ 2.200,00</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/museuuu.jpg" alt="Pacote Museu" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h2>Pacote Cultural em Museus</h2>
+                        <p>Explore a cultura e a história com esse pacote que inclui visitas a museus.</p>
+                        <p>R$ 1.800,00</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Controls -->
+            <a class="carousel-control-prev" href="#promoCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#promoCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Contato</h3>
+                    <p>Telefone: (00) 00000-0000</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Endereço</h3>
+                    <p>Rua da Moeda, 03 - Centro</p>
+                    <p>Recife - PE</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Siga-nos nas redes sociais</h3>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="rights">© 2023 Trilha - PE. Todos os direitos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-hXF3e4eknG1JZlP6sZ6n2wwv2T0PnojM+Ff8AswOyT4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </body>
+</html>
